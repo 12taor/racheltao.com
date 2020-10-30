@@ -1,12 +1,15 @@
 ---
-title: "About me"
+title: "about me"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-# This page has information about me
+### intro
 
-I take p8105.
+I am a 2nd year master's student at columbia university studying epidemiology and applied biostatistics. My prior background includes environmental science and clinical research. 
+
+### contact info
+
 

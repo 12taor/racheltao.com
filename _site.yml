@@ -15,4 +15,4 @@ navbar:
       href: http://github.com/12taor/
 output:
   html_document:
-    theme: flatly
+    theme: cosmo

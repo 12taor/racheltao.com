@@ -3,16 +3,18 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "About"
+    - text: "Curriculum Vitae"
       href: about.html
     - text: "Plotly"
       href: plotly.html
     - text: "Dashboard"
       href: dashboard.html
     - icon: fa-envelope fa-lg
-      href: mailto:<you@youremail.com>
+      href: mailto:<rachelhtao@gmail.com>
     - icon: fa-github fa-lg
       href: http://github.com/12taor/
+    - icon: fa-linkedin-square
+      href: https://www.linkedin.com/in/rachel-tao/
 output:
   html_document:
-    theme: cosmo
+    theme: flatly

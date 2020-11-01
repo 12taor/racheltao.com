@@ -1,10 +1,9 @@
 ---
-title: "Dashboard"
+title: "NYC Restaurant Inspections"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
-runtime: shiny
 ---
 
 ```{r setup, include=FALSE}
@@ -12,59 +11,95 @@ library(flexdashboard)
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
+library(lubridate)
 ```
 
-
 ```{r}
-data("nyc_airbnb")
+data("rest_inspec")
 
-nyc_airbnb = 
-  nyc_airbnb %>% 
-  mutate(rating = review_scores_location / 2) %>% 
-  select(neighbourhood_group, neighbourhood, rating, price, room_type, lat, long) %>%
-  filter(
-    neighbourhood_group == "Manhattan",
-    room_type == "Entire home/apt",
-    price %in% 100:500
+nyc_inspections <- 
+  select(rest_inspec, action, boro, inspection_date, cuisine_description, dba, score, street, violation_description, zipcode, grade) %>% 
+  mutate(
+    inspection_date =
+      as.Date(inspection_date),
   ) %>% 
-  drop_na(rating)
+  filter(
+    inspection_date > "2016-12-31",
+    score != 'NA'
+  ) %>% 
+  arrange(inspection_date) %>% 
+  distinct(dba, .keep_all = TRUE)
 ```
 
 
-Column {data = width = 650}
+Column {data-width=700}
 -----------------------------------------------------------------------
 
-### Chart A
+### Inspection Score by Cuisine Type
 
 ```{r}
-
-nyc_airbnb %>% 
-  mutate(text_label = str_c("Price: $", price, "\nRating: ", rating)) %>% 
-  filter(neighbourhood_group == "Manhattan") %>% 
+nyc_inspections %>% 
+  mutate(cuisine_description = fct_reorder(cuisine_description, -score)) %>% 
   plot_ly(
-    x = ~lat, y = ~long, color = ~price, text = ~text_label, 
-    alpha = 0.5, type = "scatter", mode = "markers")
+    x = ~score, y = ~cuisine_description, color = ~cuisine_description, 
+    type = "box", colors = "viridis"
+  ) %>% 
+  layout(
+    showlegend = FALSE,
+    yaxis = list(title = "")
+  )
 ```
 
-Column {data-width=350}
+Column {data-width=300}
 -----------------------------------------------------------------------
 
-### Chart B
+### Score Distribution by Borough
 
 ```{r}
-nyc_airbnb %>% 
-  mutate(neighbourhood = fct_reorder(neighbourhood, price)) %>% 
-  plot_ly(
-    y = ~price, x = ~neighbourhood, color = ~neighbourhood,
-    type = "box", colors = "viridis")
+#create tibble with 5 boroughs and scores only
+
+boro_scores <- 
+  nyc_inspections %>% 
+  filter(score < 100) %>% 
+  select(boro, score, dba) %>% 
+  pivot_wider(
+    id_cols = dba,
+    names_from = boro,
+    values_from = score
+  ) %>% 
+  select(-Missing) %>% 
+  rename('STATEN_ISLAND' = "STATEN ISLAND")
+
+#note: 16 high outliers (score > 100) out of 16,771 observations were excluded for improved visualization.
+
+plot_ly(data = boro_scores, alpha = 0.4, colors = "viridis") %>% 
+  add_histogram(x = ~MANHATTAN, name = "manhattan") %>% 
+  add_histogram(x = ~BROOKLYN, name = "brooklyn") %>% 
+  add_histogram(x = ~QUEENS, name = "queens") %>% 
+  add_histogram(x = ~BRONX, name = "bronx") %>% 
+  add_histogram(x = ~STATEN_ISLAND, name = "staten island") %>% 
+  layout(
+    barmode = "overlay",
+    xaxis = list(title = "score"),
+    yaxis = list(title = "frequency")
+    )
+
 ```
 
-### Chart C
+### Scores of Restaurants that Received a C-grade in 2017
 
 ```{r}
-nyc_airbnb %>% 
-  count(neighbourhood) %>% 
-  mutate(neighbourhood = fct_reorder(neighbourhood, n)) %>% 
-  plot_ly(x = ~neighbourhood, y = ~n, color = ~neighbourhood, colors = "viridis", type = "bar")
+nyc_inspections %>% 
+  filter(
+    grade == "C",
+    score > 27L
+    ) %>% 
+  plot_ly(
+    x = ~inspection_date, y = ~score, color = ~boro, text = ~dba,
+    type = "scatter", mode = "markers", colors = "viridis"
+  ) %>% 
+  layout(
+    xaxis = list(title = "inspection date")
+  )
 ```
 

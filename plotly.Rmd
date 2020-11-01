@@ -6,17 +6,14 @@ output:
     toc_float: true
 ---
 
-# Loading data
 
-We're going to look at NYC Airbnb data.
+We're going to look at NYC restaurant inspection data.
 
-```{r}
+```{r include=FALSE}
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
 library(lubridate)
-library(leaflet)
-library(sp)
 
 knitr::opts_chunk$set(
   fig.width = 6,
@@ -37,7 +34,7 @@ scale_fill_discrete = scale_fill_viridis_d
 ```
 
 
-```{r}
+```{r include=FALSE}
 data("rest_inspec")
 
 nyc_inspections <- 
@@ -56,51 +53,29 @@ nyc_inspections <-
 ```
 
 
-#Plotly plots
-
-## map
-
-```{r eval=FALSE, include=FALSE}
-density <- 
-  count(nyc_inspections, zipcode)
-
-bins <- c(0, 100, 200, 300, 400, 500, 600, 700, 800, 900, Inf)
-
-density %>% 
-  leaflet() %>% 
-  addTiles() %>% 
-  addPolygons(label = zipcode,
-              fillColor = ~n) %>% 
-  frameWidget()
-
-
-nyc <- 
-  leaflet(density) %>% 
-  setView(lat = 40.730610, lng = -73.935242, zoom = 11) %>% 
-  addProviderTiles("CartoDB", layerId = ZCTA)
-
-nyc <- 
-  leaflet(density) %>% 
-  addTiles() %>% 
-```
-
-
 ## scatterplot
 
-```{r eval=FALSE, include=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 
 nyc_inspections %>% 
+  filter(
+    grade == "C",
+    score > 27L
+    ) %>% 
   plot_ly(
-    x = ~inspection_date, y = ~score, color = ~boro, text = ~cuisine_description,
-    type = "scatter", mode = "markers" 
+    x = ~inspection_date, y = ~score, color = ~boro, text = ~dba,
+    type = "scatter", mode = "markers", colors = "viridis"
+  ) %>% 
+  layout(
+    title = "Scores of Restaurants that Received a C-grade in 2017",
+    xaxis = list(title = "inspection date")
   )
-
 
 ```
 
 ## boxplot
 
-```{r}
+```{r echo=FALSE}
 nyc_inspections %>% 
   mutate(cuisine_description = fct_reorder(cuisine_description, -score)) %>% 
   plot_ly(
@@ -117,7 +92,7 @@ nyc_inspections %>%
 
 ## histogram
 
-```{r}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 
 #create tibble with 5 boroughs and scores only
 
@@ -133,11 +108,6 @@ boro_scores <-
   select(-Missing) %>% 
   rename('STATEN_ISLAND' = "STATEN ISLAND")
 
-quick_check <- 
-  nyc_inspections %>% 
-  select(dba, score) %>% 
-  arrange(-score)
-
 #note: 16 high outliers (score > 100) out of 16,771 observations were excluded for improved visualization.
 
 plot_ly(data = boro_scores, alpha = 0.4, colors = "viridis") %>% 
@@ -148,20 +118,10 @@ plot_ly(data = boro_scores, alpha = 0.4, colors = "viridis") %>%
   add_histogram(x = ~STATEN_ISLAND, name = "staten island") %>% 
   layout(
     barmode = "overlay",
+    title = "score distribution by borough",
     xaxis = list(title = "score"),
     yaxis = list(title = "frequency")
     )
 
-```
-
-# ggplotly
-
-```{r eval=FALSE, include=FALSE}
-ggp_scatter =
-  nyc_airbnb %>% 
-  ggplot(aes(x = lat, y = long, color = price)) +
-  geom_point()
-
-ggplotly(ggp_scatter)
 ```
 

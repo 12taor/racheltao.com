@@ -14,70 +14,144 @@ We're going to look at NYC Airbnb data.
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
+library(lubridate)
+library(leaflet)
+library(sp)
+
+knitr::opts_chunk$set(
+  fig.width = 6,
+  fig.asp = 0.6,
+  out.width = "90%"
+)
+
+theme_set(theme_minimal() + theme(legend.position = "bottom"))
+
+options(
+  ggplot2.continuous.colour = "viridis",
+  ggplot2.continuous.fill = "viridis"
+)
+
+scale_colour_discrete = scale_colour_viridis_d
+scale_fill_discrete = scale_fill_viridis_d
 
 ```
+
 
 ```{r}
-data("ny_noaa")
+data("rest_inspec")
 
-ny_noaa <- 
-  separate(ny_noaa, date, into = c("year", "month", "day"), sep = ) %>% 
+nyc_inspections <- 
+  select(rest_inspec, action, boro, inspection_date, cuisine_description, dba, score, street, violation_description, zipcode, grade) %>% 
   mutate(
-    year =
-      as.numeric(year),
-    month =
-      as.numeric(month),
-    day = 
-      as.numeric(day),
-    tmax =
-      (as.numeric(tmax)),
-    tmin =
-      (as.numeric(tmin)),
-    prcp =
-      round(prcp * 0.03937 * 4) / 4,
-    snow = 
-      round(snow * 0.03937 * 4) / 4
-  )
+    inspection_date =
+      as.Date(inspection_date),
+  ) %>% 
+  filter(
+    inspection_date > "2016-12-31",
+    score != 'NA'
+  ) %>% 
+  arrange(inspection_date) %>% 
+  distinct(dba, .keep_all = TRUE)
 
 ```
 
-# Plotly plots
+
+#Plotly plots
+
+## map
+
+```{r eval=FALSE, include=FALSE}
+density <- 
+  count(nyc_inspections, zipcode)
+
+bins <- c(0, 100, 200, 300, 400, 500, 600, 700, 800, 900, Inf)
+
+density %>% 
+  leaflet() %>% 
+  addTiles() %>% 
+  addPolygons(label = zipcode,
+              fillColor = ~n) %>% 
+  frameWidget()
+
+
+nyc <- 
+  leaflet(density) %>% 
+  setView(lat = 40.730610, lng = -73.935242, zoom = 11) %>% 
+  addProviderTiles("CartoDB", layerId = ZCTA)
+
+nyc <- 
+  leaflet(density) %>% 
+  addTiles() %>% 
+```
+
 
 ## scatterplot
 
 ```{r eval=FALSE, include=FALSE}
-# do not run this! it takes way too long and crashes. maybe i can fix this by doing averages or something?
 
-#ny_noaa %>% 
-#  plot_ly(
-#    x = ~tmax, y = ~prcp, color = ~month, text = ~month, alpha = 0.5, 
-#    type = "scatter", mode = "markers"
-#  )
-
-nyc_airbnb %>% 
-  mutate(text_label = str_c("Price: $", price, "\nRating: ", rating)) %>% 
+nyc_inspections %>% 
   plot_ly(
-    x = ~lat, y = ~long, color = ~price, text = ~text_label, 
-    alpha = 0.5, type = "scatter", mode = "markers")
+    x = ~inspection_date, y = ~score, color = ~boro, text = ~cuisine_description,
+    type = "scatter", mode = "markers" 
+  )
+
+
 ```
 
 ## boxplot
 
-```{r eval=FALSE, include=FALSE}
-nyc_airbnb %>% 
-  mutate(neighbourhood = fct_reorder(neighbourhood, price)) %>% 
+```{r}
+nyc_inspections %>% 
+  mutate(cuisine_description = fct_reorder(cuisine_description, -score)) %>% 
   plot_ly(
-    y = ~price, x = ~neighbourhood, color = ~neighbourhood,
-    type = "box", colors = "viridis")
+    x = ~score, y = ~cuisine_description, color = ~cuisine_description, 
+    type = "box", colors = "viridis"
+  ) %>% 
+  layout(
+    showlegend = FALSE,
+    title = "Inspection Score by Cuisine Type",
+    yaxis = list(title = "")
+  )
+
 ```
 
-## bar plot
+## histogram
 
-```{r eval=FALSE, include=FALSE}
-nyc_airbnb %>% 
-  count(neighbourhood) %>% 
-  mutate(neighbourhood = fct_reorder(neighbourhood, n)) %>% 
-  plot_ly(x = ~neighbourhood, y = ~n, color = ~neighbourhood, colors = "viridis", type = "bar")
+```{r}
+
+#create tibble with 5 boroughs and scores only
+
+boro_scores <- 
+  nyc_inspections %>% 
+  filter(score < 100) %>% 
+  select(boro, score, dba) %>% 
+  pivot_wider(
+    id_cols = dba,
+    names_from = boro,
+    values_from = score
+  ) %>% 
+  select(-Missing) %>% 
+  rename('STATEN_ISLAND' = "STATEN ISLAND")
+
+quick_check <- 
+  nyc_inspections %>% 
+  select(dba, score) %>% 
+  arrange(-score)
+
+#note: 16 high outliers (score > 100) out of 16,771 observations were excluded for improved visualization.
+
+plot_ly(data = boro_scores, alpha = 0.4, colors = "viridis") %>% 
+  add_histogram(x = ~MANHATTAN, name = "manhattan") %>% 
+  add_histogram(x = ~BROOKLYN, name = "brooklyn") %>% 
+  add_histogram(x = ~QUEENS, name = "queens") %>% 
+  add_histogram(x = ~BRONX, name = "bronx") %>% 
+  add_histogram(x = ~STATEN_ISLAND, name = "staten island") %>% 
+  layout(
+    barmode = "overlay",
+    xaxis = list(title = "score"),
+    yaxis = list(title = "frequency")
+    )
+
 ```
 
 # ggplotly

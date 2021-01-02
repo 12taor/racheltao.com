@@ -5,9 +5,9 @@ navbar:
   right:
     - text: "Publications"
       href: about.html
+      external: true
     - text: "CV"
       href: "data/Tao_Rachel_CV.pdf"
-      external: true
     - icon: fa-envelope fa-lg
       href: mailto:<rachelhtao@gmail.com>
     - icon: fa-github fa-lg

@@ -15,4 +15,4 @@ Rachel received her BA in Environmental Biology from Columbia University in 2016
 Currently, she is working on projects about 1) air pollutant mixtures as health exposures, 2) off-site gun storage as a harm reduction approach to firearm death and injury, and 3) public health literacy in the Washington Heights community. You can learn more about each of these projects [here](https://12taor.github.io/data/Tao_Rachel_CV.pdf).
 
 
-<img src="images/slovenia.jpg" style="position:absolute; top:80px; right:100px; width:260px">
+<img src="images/slovenia.jpg" style="position:absolute; top:80px; right:120px; width:260px">

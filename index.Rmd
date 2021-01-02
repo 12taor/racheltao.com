@@ -12,7 +12,7 @@ output:
 
 Rachel received her BA in Environmental Biology from Columbia University in 2016, and returned to Columbia in 2019 for her MPH in Epidemiology. During the years in between, she worked for the NYC Department of Parks and Recreation assessing ecosystem services from green roofs, and was a research assistant in Pediatric Endocrinology at Columbia Medical Center for 2 years. Her interests include environmental epidemiology, violence and injury prevention, and science communication.
 
-Currently, she is working on projects about 1) air pollutant mixtures as health exposures, 2) off-site gun storage as a harm reduction approach to firearm death and injury, and 3) public health literacy in the Washington Heights community. You can learn more about each of these projects [here] <a href = "data/Tao_Rachel_CV.pdf">.
+Currently, she is working on projects about 1) air pollutant mixtures as health exposures, 2) off-site gun storage as a harm reduction approach to firearm death and injury, and 3) public health literacy in the Washington Heights community. You can learn more about each of these projects [here](https://12taor.github.io/data/Tao_Rachel_CV.pdf).
 
 
 <img src="images/slovenia.jpg" style="position:absolute; top:80px; right:100px; width:260px">

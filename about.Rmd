@@ -1,76 +1,15 @@
 ---
-title: "Curriculum Vitae"
+title: "Publications"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-## Education
-Columbia University, Mailman School of Public Health  
-Master of Public Health, Epidemiology (Expected: May 2021)  
-Dean’s Scholarship Merit Award Recipient  
-Certificate in Applied Biostatistics  
-Involvement: Teaching Assistant for Applied Regression I (Fall 2020)  
+## Op-Ed
+Tao R. Opinion: A side effect of COVID-19 could be weaker civil liberties. [City Limits, July 4, 2020](https://citylimits.org/2020/07/04/opinion-a-side-effect-of-covid-19-could-be-weaker-civil-liberties/).
 
-Columbia University, Columbia College  
-Bachelor of Arts, Environmental Biology (May 2016)  
-Thesis: Differences in Water-Use for Plant Species on New York Green Roofs   
-
-## Current projects
-makLab, Department of Environmental Health Sciences  
-Mentored Research with Marianthi-Anna Kioumourtzoglou, ScD, Assistant Professor  
-•	Aid in development of machine learning methods to assess environmental mixtures as health exposures  
-•	Analysis of NYC air pollution data using R  
-•	Collaborate with an interdisciplinary team of epidemiologists,  biostatisticians, computer scientists and engineers
-
-Citizen Public Health Literacy [(CIPHER)](https://www.decipherpubhealth.org/)  
-Community Needs Assessment Task Group Member  
-•	Outreach and collaboration with community-based organizations (CBOs) to address emerging needs from COVID-19  
-•	Workshop grant writing and application strategy with two participating CBOs (Uptown Dreamers and CORNER Project)  
-•	Review public health curriculum for accuracy and cultural competency in collaboration with Washington Heights CBOs
-
-Rutgers Center on Gun Violence Research/Mailman School of Public Health  
-Firearm Storage Mapping  
-•	Create online map of gun storage sites in NY and NJ for gun owners who do not want to keep firearms in the home  
-•	Call gun stores to collect data and ascertain willingness to participate in project  
-•	Analyze data using SAS and QGIS for policy brief on offsite firearm storage as a harm reduction approach to gun violence
-
-## Relevant Experience
-
-Division of Pediatric Endocrinology, Diabetes, and Metabolism  
-Columbia University Irving Medical Center, New York, USA  
-Research Assistant and Fellowship Coordinator  
-May 2017-June 2019  
-•	Coordinated study subject visits, maintained data and regulatory information for ongoing research  
-•	Editorial assistance for manuscripts, abstracts, grant proposals (publications list available on   request)  
-•	Catalogued evaluations and research of 7 fellows for program outcome reporting to medical education bodies  
-•	Provided support and assistance to clinical staff as a Medical Scribe   
-
-Greenbelt Native Plant Center  
-New York City Department of Parks and Recreation, New York, USA  
-Research Assistant and Nursery Worker  
-August-December 2016   
-•	Set up and maintained greenhouse experiment to test water use in plants used on green roofs  
-•	Analyzed data using R to detect species-level differences in water use  
-•	Prepared results in the form of a research report and recommendation to NYC Parks Department  
-
-## Volunteer and Leadership
-[SISU Mentor](https://www.sisumentor.org/mentors), International  
-August 2020 – Present  
-Mentor for women in STEM in a newly launched project
-
-[Crime Victims Treatment Center](https://www.cvtcnyc.org/), New York, USA  
-October 2016 – October 2020  
-Volunteer Rape Crisis and Domestic Violence Counselor and Mentor for Trainees
-
-## Skills and Certiifications
-Statistical programming languages (all intermediate proficiency): R, SAS, ArcGIS, CARTO  
-Languages: English (fluent), French (basic proficiency), Mandarin (basic proficiency)  
-General: Microsoft Excel, Microsoft Office, NIH grant application preparation, Literature Review  
-Certifications: HIPAA, NYS Rape Crisis and Domestic Violence Survivor Advocacy
-
-## Publications
+## Co-author Publications
 Ibañez L, Oberfield SE, Witchel S, Auchus RJ, Chang RJ, Codner E, Dabadghao P, Darendeliler F, Elbarbary NS, Gambineri A, Garcia Rudaz C, Hoeger KM, López-Bermejo A, Ong K, Peña AS, Reinehr T, Santoro N, Tena-Sempere M, Tao R, Yildiz BO, Alkhayyat H, Deeb A, Joel D, Horikawa R, de Zegher F, Lee PA. An International Consortium Update: Pathophysiology, diagnosis, and treatment of polycystic ovarian syndrome in adolescence. [Horm Res Paediatr, 2017;88(6):371-395](https://www.karger.com/Article/FullText/479371). 
 
 Oberfield SE, Tao R, Witchel SF. Present knowledge on the etiology and treatment of adrenarche. [Pediatric Endocrinol Rev 2018;15(3):244-254](https://pubmed.ncbi.nlm.nih.gov/29493129/).
@@ -83,6 +22,6 @@ Pereira-Eshraghi CF, Chiuzan C, Zhang Y, Tao RH, McCann M, Neugut D, Printz A, F
 
 Weiner A, Cowell A, McMahon DJ, Tao R, Zitsman J, Oberfield SE, Fennoy I. The effects of adolescent laparoscopic adjustable gastric band sleeve gastrectomy on markers of bone health and bone turnover. [Clinical Obesity, 2020](https://onlinelibrary.wiley.com/doi/10.1111/cob.12411).
 
-## Op-Ed
-Tao R. Opinion: A side effect of COVID-19 could be weaker civil liberties. [City Limits, July 4, 2020](https://citylimits.org/2020/07/04/opinion-a-side-effect-of-covid-19-could-be-weaker-civil-liberties/).
+## Class Projects
 
+Data Science, Fall 2020: [Factors Influencing Abortion Access] (https://maggie-mengyuan-li.github.io/p8105_2020_final/index.html#Screencast)

@@ -16,3 +16,5 @@ Currently, she is working on projects about 1) air pollutant mixtures as health 
 
 
 <img src="images/slovenia.jpg" style="position:absolute; top:80px; right:120px; width:260px">
+
+<img align="bottom" width="1000" src="images/ferry.jpg">

@@ -24,3 +24,5 @@ Weiner A, Cowell A, McMahon DJ, Tao R, Zitsman J, Oberfield SE, Fennoy I. The ef
 ## Class Projects
 
 Data Science, Fall 2020: [Factors Influencing Abortion Access](https://maggie-mengyuan-li.github.io/p8105_2020_final/index.html#Screencast)
+
+<img src="images/amanda.jpg" style="position:absolute; top:80px; right:150px; width:100px">

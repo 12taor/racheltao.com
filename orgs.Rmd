@@ -1,0 +1,18 @@
+---
+title: "Organizations"
+output: 
+  html_document:
+    toc: false
+---
+
+I am only as successful as the teams that I am working with, so here is a list of groups I am currently involved with, as well as organizations that have made an impact on me in the past:
+
+[makLab](https://marianthi.github.io/makLAB.github.io/index.html) is an environmental epidemiology lab led by Dr. Marianthi-Anna Kioumourtzoglou at Columbia University, focusing on methodological issues in environmental health sciences. My master's thesis on air pollution and myocardial infarction has been driven by work in this lab and through collaboration with the members of this team.
+
+[CIPHER](https://www.decipherpubhealth.org/) is a student-run organization at the Mailman School of Public Health dedicated to increasing accessibility and transparency of health information through collaboration with community partners in Washington Heights. We create online curricula for interested individuals, lead discussions with community-based organizations to identify relevant public health topics, and work directly with community members to address emerging needs from COVID-19.
+
+The [Division of Pediatric Endocrinology, Diabetes, and Metabolism](https://www.pediatrics.columbia.edu/about-us/divisions/endocrinology-diabetes-and-metabolism) at Columbia University Irving Medical Center includes an all-star team of clinicians and physician-scientists whose work has been an inspiration to me as I begin my public health career. I worked as a research assistant, fellowship coordinator, and medical scribe there 2017-2019.
+
+[CVTC](https://www.cvtcnyc.org/) supports survivors of sexual violence through psychological counseling, legal advocacy, and other services. I volunteered as an Emergency Department crisis counselor from 2016-2020, and mentored trainees for crisis counseling 2018-2020.
+
+[Geenbelt Native Plant Center](https://www.nycgovparks.org/greening/greenbelt-native-plant-center) is a 13-acre greenhouse, nursery, and research site part of the NYC Department of Parks and Recreation. Collaborating with greenhouse staff allowed me to conduct an experiment on ecosystem services from green roof in 2016.

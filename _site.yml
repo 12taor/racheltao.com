@@ -3,11 +3,11 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "Publications"
-      href: about.html
-      external: true
     - text: "Organizations"
       href: orgs.html
+      external: true
+    - text: "Publications"
+      href: about.html
       external: true
     - text: "CV"
       href: "data/Tao_Rachel_Resume.pdf"

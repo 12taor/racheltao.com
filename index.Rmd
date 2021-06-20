@@ -1,20 +1,19 @@
 ---
-title: "Rachel Tao"
+title: "Rachel Tao, MPH"
+subtitle: "Dimensionality Reductionist"
 output: 
   html_document:
     toc: false
 ---
 
-### MPH Candidate in Epidemiology
-### Applied Biostatistics and Data Science
-#### Mailman School of Public Health
-#### Columbia University
+<img src="images/slovenia.jpg" style="width:40%" ALIGN="right" HSPACE="80" VSPACE="20">
 
-Rachel received her BA in Environmental Biology from Columbia University in 2016, and returned to Columbia in 2019 for her MPH in Epidemiology. During the years in between, she worked for the NYC Department of Parks and Recreation assessing ecosystem services from green roofs, and was a research assistant in Pediatric Endocrinology at Columbia Medical Center for 2 years. Her interests include environmental health, clinical epidemiology, and science communication.
+Hello!
 
-Currently, she is working on projects about 1) air pollutant mixtures as health exposures and 2) public health literacy in the Washington Heights community. You can learn more about each of these projects [here](https://12taor.github.io/data/Tao_Rachel_Resume.pdf).
+My name is Rachel (she/her), and I really like using statistics to help people. I received my BA in Environmental Biology from Columbia University in 2016, and returned to Columbia in 2019 for my MPH in Epidemiology, which I completed in May 2021. During the years in between, I worked for the NYC Department of Parks and Recreation assessing ecosystem services from green roofs, and was a research assistant in Pediatric Endocrinology at Columbia Medical Center for 2 years. My interests include public health solutions, environmental health, and science communication.
 
+Recently, I have worked on projects about 1) air pollutant mixtures as health exposures and 2) COVID-19 vaccine equity and outreach. You can learn more about each of these projects [here](https://12taor.github.io/data/Tao_Rachel_CV.pdf).
 
-<img src="images/slovenia.jpg" style="position:absolute; top:80px; right:120px; width:260px">
+I also like: plants, free jazz, knitting, local government, fried rice, bike rides, and TV journalist Yamiche Alcindor.
 
-<img align="bottom" width="1000" src="images/mountains.jpg">
+<img src="images/BJ_ground.jpg" style="width:91.5%" VSPACE="10">

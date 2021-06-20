@@ -7,14 +7,15 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+knitr::opts_chunk$set(eval = FALSE, include = FALSE)
 library(flexdashboard)
 library(tidyverse)
-library(p8105.datasets)
+# library(p8105.datasets)
 library(plotly)
 library(lubridate)
 ```
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 data("rest_inspec")
 
 nyc_inspections <- 
@@ -37,7 +38,7 @@ Column {data-width=700}
 
 ### Inspection Score by Cuisine Type
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 nyc_inspections %>% 
   mutate(cuisine_description = fct_reorder(cuisine_description, -score)) %>% 
   plot_ly(
@@ -55,7 +56,7 @@ Column {data-width=300}
 
 ### Score Distribution by Borough
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 #create tibble with 5 boroughs and scores only
 
 boro_scores <- 
@@ -88,7 +89,7 @@ plot_ly(data = boro_scores, alpha = 0.4, colors = "viridis") %>%
 
 ### Scores of Restaurants that Received a C-grade in 2017
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 nyc_inspections %>% 
   filter(
     grade == "C",

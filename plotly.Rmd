@@ -9,9 +9,9 @@ output:
 
 We're going to look at NYC restaurant inspection data.
 
-```{r include=FALSE}
+```{r eval=FALSE, include=FALSE}
 library(tidyverse)
-library(p8105.datasets)
+# library(p8105.datasets)
 library(plotly)
 library(lubridate)
 
@@ -34,7 +34,7 @@ scale_fill_discrete = scale_fill_viridis_d
 ```
 
 
-```{r include=FALSE}
+```{r eval=FALSE, include=FALSE}
 data("rest_inspec")
 
 nyc_inspections <- 
@@ -55,7 +55,7 @@ nyc_inspections <-
 
 ## scatterplot
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 
 nyc_inspections %>% 
   filter(
@@ -75,7 +75,7 @@ nyc_inspections %>%
 
 ## boxplot
 
-```{r echo=FALSE}
+```{r eval=FALSE, include=FALSE}
 nyc_inspections %>% 
   mutate(cuisine_description = fct_reorder(cuisine_description, -score)) %>% 
   plot_ly(
@@ -92,7 +92,7 @@ nyc_inspections %>%
 
 ## histogram
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 
 #create tibble with 5 boroughs and scores only
 

@@ -10,10 +10,10 @@ output:
 
 Hello!
 
-My name is Rachel (she/her), and I really like using statistics to help people. I received my BA in Environmental Biology from Columbia University in 2016, and returned to Columbia in 2019 for my MPH in Epidemiology, which I completed in May 2021. During the years in between, I worked for the NYC Department of Parks and Recreation assessing ecosystem services from green roofs, and was a research assistant in Pediatric Endocrinology at Columbia Medical Center for 2 years. My interests include public health solutions, environmental health, and science communication.
+My name is Rachel (she/her), and I really like using statistics to address problems. I received my BA in Environmental Biology from Columbia University in 2016, and returned to Columbia in 2019 for my MPH in Epidemiology, which I completed in May 2021. During the years in between, I worked for the NYC Department of Parks and Recreation assessing ecosystem services from green roofs, and was a research assistant in Pediatric Endocrinology at Columbia Medical Center for 2 years. My interests include public health solutions, environmental health, and science communication.
 
 Recently, I have worked on projects about 1) air pollutant mixtures as health exposures and 2) COVID-19 vaccine equity and outreach. You can learn more about each of these projects [here](https://12taor.github.io/data/Tao_Rachel_CV.pdf).
 
-I also like: plants, free jazz, knitting, local government, fried rice, bike rides, and TV journalist Yamiche Alcindor.
+I also like: plants, free jazz, knitting, local government, fried rice, bike rides, and Yamiche Alcindor.
 
 <img src="images/BJ_ground.jpg" style="width:91.5%" VSPACE="10">

@@ -33,7 +33,9 @@ University. [April 2016](data/TaoR_Poster_Final.pdf). New York, NY, USA.
 
 Master Thesis, Department of Epidemiology, Mailman School of Public Health, Columbia University. Spring 2021: [Investigating the association between source-specific fine particulate matter and hospitalization due to myocardial infarction in New York City](data/Tao_Rachel_FinalThesis.pdf)
 
-Data Science I, Mailman School of Public Health, Columbia University. Fall 2020: [Factors Influencing Abortion Access](https://maggie-mengyuan-li.github.io/p8105_2020_final/index.html#Screencast)
+Introduction to Machine Learning for Epidemiology, Mailman School of Public Health, Columbia University. Spring 2021: [Individual Final Project: Unsupervised and Supervised Analyses to Investigate Exposome Predictors of Childhood Overweight/Obesity](https://github.com/12taor/ML_for_epi_project/blob/main/final_project.md)
+
+Data Science I, Mailman School of Public Health, Columbia University. Fall 2020: [Group Final Project: Factors Influencing Abortion Access](https://maggie-mengyuan-li.github.io/p8105_2020_final/index.html#Screencast)
 
 Senior Thesis, Department of Ecology, Evolution, and Environmental Biology, Columbia University. Fall 2015: [Ecosystem services from New York green roofs: differences in water-use between plant species](data/TaoR_Thesis_Final.pdf)
 

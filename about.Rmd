@@ -23,7 +23,7 @@ Ibañez L, Oberfield SE, Witchel S, Auchus RJ, Chang RJ, Codner E, Dabadghao P, 
 
 ## Presentations
 
-**Tao RH**. Pie Charts: Friend or Foe? Lightening Talk for R-Ladies NYC Meetup. [October 2021](data/RTao_pe_rladies.pdf). Virtual.
+**Tao RH**. Pie Charts: Friend or Foe? Lightening Talk for R-Ladies NYC Meetup. [October 2021](data/RTao_pie_rladies.pdf). Virtual.
 
 **Tao RH**, Nunez Y, Chillrud LG, Rowland ST, Boehme AK, Kioumourtzoglou M-A. Source-specific fine particulate matter and hospitalization due to myocardial infarction. Oral presentation for International Society of Environmental Epidemiology. [August 2021](data/TaoR_ISEE_2021.pdf). Virtual.
 

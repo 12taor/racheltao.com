@@ -13,8 +13,8 @@
 
 <title>Blog</title>
 
-<script src="site_libs/header-attrs-2.8/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.15/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -65,6 +65,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -85,6 +86,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -142,11 +146,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -310,7 +318,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -329,7 +337,7 @@ div.tocify {
   <a href="about.html">Publications</a>
 </li>
 <li>
-  <a href="data/Tao_Rachel_CV.pdf">CV</a>
+  <a href="data/Rachel_Tao_Resume.pdf">CV</a>
 </li>
 <li>
   <a href="http://github.com/12taor/">
@@ -345,7 +353,7 @@ div.tocify {
 </li>
 <li>
   <a href="mailto:rachelhtao@gmail.com">
-    <span class="fas fa-envelope fa-lg"></span>
+    <span class="fa fa-envelope fa-lg"></span>
      
   </a>
 </li>
@@ -363,16 +371,43 @@ div.tocify {
 </div>
 
 
-<p>Hello and welcome! This is a space for me to get some of my thoughts down, about anything that I think could be interesting or useful to other people. Although I will probably write about things that relate to my work, I am using this as a free form space to write about things I am interested in, without necessarily restricting to topics I am working on professionally or academically. Hope you enjoy!</p>
+<p>Hello and welcome! This is a space for me to get some of my thoughts
+down, about anything that I think could be interesting or useful to
+other people. Although I will probably write about things that relate to
+my work, I am using this as a free form space to write about things I am
+interested in, without necessarily restricting to topics I am working on
+professionally or academically. Hope you enjoy!</p>
 <div id="covid-19-chronicle" class="section level2">
 <h2>COVID-19 Chronicle</h2>
 <p><em>June 28, 2021</em></p>
-<p>There are so many things I could say about COVID-19, and so many ways I could frame my thoughts on it. This time last year, and even up until a few months ago, the only way that made sense to me was in the form of news: scientific breakthroughs, the best way to protect oneself, and how to live ethically through this unbelievably difficult period. Now that I and the people I love are vaccinated (!!!), my brain is letting me out of survival mode, little by little. Even though there is still a need for PSA-style writing on the pandemic (COVID-19 is not finished with us yet), I am starting to have more space to think about the historical significance of this period. I do not want to forget how it felt to live through this, and I am going to write down what I experienced so that I and anyone who reads this can remember in the future.</p>
+<p>There are so many things I could say about COVID-19, and so many ways
+I could frame my thoughts on it. This time last year, and even up until
+a few months ago, the only way that made sense to me was in the form of
+news: scientific breakthroughs, the best way to protect oneself, and how
+to live ethically through this unbelievably difficult period. Now that I
+and the people I love are vaccinated (!!!), my brain is letting me out
+of survival mode, little by little. Even though there is still a need
+for PSA-style writing on the pandemic (COVID-19 is not finished with us
+yet), I am starting to have more space to think about the historical
+significance of this period. I do not want to forget how it felt to live
+through this, and I am going to write down what I experienced so that I
+and anyone who reads this can remember in the future.</p>
 <div id="should-i-be-worried" class="section level3">
 <h3>Should I be worried?</h3>
 <p><em>June 28, 2021</em></p>
-<p>We started hearing about the pandemic in January 2020, just before Chinese New Year. There was a ‘pneumonia-like virus’ spreading in Wuhan, which seemed to have originated at a wet market there. The first reports indicated that the virus probably did not spread person-to-person, but that more research was needed. It wasn’t long before we learned that indeed it is spread person-to-person (I left some visualizations below on epidemic curves, and the difference between point-source and person-to-person propagation). People all over China were dying. It seemed like the 2003 SARS outbreak all over again. What it did not seem like, at least to me, was a global pandemic.</p>
-<p>We were watching a tragedy unfold on the other side of the world. We watched Dr. Li Wenliang die of the disease he risked everything to warn others of.</p>
+<p>We started hearing about the pandemic in January 2020, just before
+Chinese New Year. There was a ‘pneumonia-like virus’ spreading in Wuhan,
+which seemed to have originated at a wet market there. The first reports
+indicated that the virus probably did not spread person-to-person, but
+that more research was needed. It wasn’t long before we learned that
+indeed it is spread person-to-person (I left some visualizations below
+on epidemic curves, and the difference between point-source and
+person-to-person propagation). People all over China were dying. It
+seemed like the 2003 SARS outbreak all over again. What it did not seem
+like, at least to me, was a global pandemic.</p>
+<p>We were watching a tragedy unfold on the other side of the world. We
+watched Dr. Li Wenliang die of the disease he risked everything to warn
+others of.</p>
 <!-- ## NYC Bike parking app -->
 <!-- Last summer, I decided to get a bicycle and start using cycling as a way to get around. One thing that stressed me out as a new biker was the availability of bike parking. There are lots of bike racks all over the city, but sometimes you go somewhere and find that there isn't one in sight of the place where you are going, and you need to bike or walk around the area a bit to find one. In big 2021, it seemed to me like there should be a map online that shows you where available bike racks are, so you can just bike directly to a place where you can park your bike, like with CitiBike. But the only one I found was on NYC OpenData, which isn't very accessible for practical use. So, I decided to make one - if you have ever had this problem, and want to be able to bike directly to the most accessible bike rack in NYC, feel free to use! -->
 </div>
@@ -416,6 +451,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')

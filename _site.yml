@@ -10,7 +10,7 @@ navbar:
       href: about.html
       external: true
     - text: "CV"
-      href: "data/Tao_Rachel_CV.pdf"
+      href: "data/Rachel_Tao_Resume.pdf"
     - icon: fab fa-github
       href: http://github.com/12taor/
     - icon: fab fa-linkedin

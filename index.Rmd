@@ -10,10 +10,10 @@ output:
 
 Hello!
 
-My name is Rachel (she/her), and I am a Healthcare Data Analyst at Fair Health. I received my BA in Environmental Biology from Columbia University in 2016, and returned to Columbia in 2019 for my MPH in Epidemiology, which I completed in May 2021. During the years in between, I worked for the NYC Department of Parks and Recreation assessing ecosystem services from green roofs, and was a research assistant in Pediatric Endocrinology at Columbia Medical Center for 2 years. My interests include public health solutions, environmental health, and science communication.
+My name is Rachel (she/her), and I am a Data Scientist and PhD student at Imperial College London in the [iCARE](https://imperialbrc.nihr.ac.uk/facilities/icare/) team. Before moving to London, I was a Healthcare Data Analyst at Fair Health, leveraging data science for transparency in American healthcare pricing. I received my MPH in Epidemiology from Columbia University in 2019, where I got to work on some very cool research on [air pollution and heart attack incidence](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10097537/). 
 
-Recently, I have worked on projects about 1) air pollutant mixtures as health exposures and 2) COVID-19 vaccine equity and outreach. You can learn more about each of these projects [here](data/Rachel_Tao_Resume.pdf).
+You can find out more about my professional background from my [resume](data/Rachel_Tao_Resume.pdf) or on [linkedin](https://www.linkedin.com/in/rachel-tao/).
 
-I also like: plants, free jazz, knitting, local government, fried rice, bike rides, and Yamiche Alcindor.
+I also like: knitting, plants, free jazz, local government, noodles, bike rides, and Yamiche Alcindor.
 
 <img src="images/BJ_ground.jpg" style="width:91.5%" VSPACE="10">

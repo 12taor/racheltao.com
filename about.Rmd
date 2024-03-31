@@ -9,6 +9,10 @@ output:
 **Tao R**. Opinion: A side effect of COVID-19 could be weaker civil liberties. [City Limits, July 4, 2020](https://citylimits.org/2020/07/04/opinion-a-side-effect-of-covid-19-could-be-weaker-civil-liberties/).
 
 ## Peer-Reviewed Articles
+**Tao R**, Chillrud LG, Nunez Y, Rowland S, Boehme AK, Yan J, Goldsmith J, Wright J, Kioumourtzoglou M-A. Applying principal component pursuit to investigate the association between source-specific fine particulate matter and myocardial infarction hospitalizations in New York City. [Environmental Epidemiology, 2023](data/Tao2023.pdf);7(2)e243.
+
+Pereira-Eshraghi CF, Tao R, Chiuzan CC, Zhang Y, Shen W, Lerner JP, Oberfield SE, Sopher AB. Ovarian follicle count by magnetic resonance imaging is greater in adolescents and young adults with polycystic ovary syndrome than in controls. [F&S Reports, 2022](data/Pereira2022.pdf);3(2):102-109.
+
 Weiner A, Cowell A, McMahon DJ, **Tao R**, Zitsman J, Oberfield SE, Fennoy I. The effects of adolescent laparoscopic adjustable gastric band sleeve gastrectomy on markers of bone health and bone turnover. [Clinical Obesity, 2020](data/Weiner2020.pdf).
 
 Pereira-Eshraghi CF, Chiuzan C, Zhang Y, **Tao RH**, McCann M, Neugut D, Printz A, Fennoy I, Cree-Green M, Oberfied SE, Sopher AB. Obesity and insulin resistance, not polycystic ovary syndrome, are independent predictors of bone mineral density in adolescents and young women. [Horm Res Paediatr, 2020](data/Pereira2020.pdf); 1-7.

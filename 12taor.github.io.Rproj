@@ -13,3 +13,4 @@ RnwWeave: Sweave
 LaTeX: pdfLaTeX
 
 BuildType: Website
+WebsitePath: /Users/racheltao/Documents/My Documents/MPH/Coursework/Semester 3/Data Science I/12taor.github.io

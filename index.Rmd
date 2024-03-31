@@ -1,6 +1,6 @@
 ---
 title: "Rachel Tao, MPH"
-subtitle: "Healthcare Data Analyst"
+subtitle: "Healthcare Data Scientist"
 output: 
   html_document:
     toc: false

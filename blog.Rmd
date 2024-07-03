@@ -1,0 +1,28 @@
+---
+title: "Blog"
+output: 
+  html_document:
+    toc: true
+    toc_float:
+      toc_collapsed: true
+---
+
+Hello and welcome! This is a space for me to get some of my thoughts down, about anything that I think could be interesting or useful to other people. Although I will probably write about things that relate to my work, I am using this as a free form space to write about things I am interested in, without necessarily restricting to topics I am working on professionally or academically. Hope you enjoy!
+
+## COVID-19 Chronicle
+
+*June 28, 2021*
+
+There are so many things I could say about COVID-19, and so many ways I could frame my thoughts on it. This time last year, and even up until a few months ago, the only way that made sense to me was in the form of news: scientific breakthroughs, the best way to protect oneself, and how to live ethically through this unbelievably difficult period. Now that I and the people I love are vaccinated (!!!), my brain is letting me out of survival mode, little by little. Even though there is still a need for PSA-style writing on the pandemic (COVID-19 is not finished with us yet), I am starting to have more space to think about the historical significance of this period. I do not want to forget how it felt to live through this, and I am going to write down what I experienced so that I and anyone who reads this can remember in the future.
+
+### Should I be worried?
+
+*June 28, 2021*
+
+We started hearing about the pandemic in January 2020, just before Chinese New Year. There was a 'pneumonia-like virus' spreading in Wuhan, which seemed to have originated at a wet market there. The first reports indicated that the virus probably did not spread person-to-person, but that more research was needed. It wasn't long before we learned that indeed it is spread person-to-person (I left some visualizations below on epidemic curves, and the difference between point-source and person-to-person propagation). People all over China were dying. It seemed like the 2003 SARS outbreak all over again. What it did not seem like, at least to me, was a global pandemic.
+
+We were watching a tragedy unfold on the other side of the world. We watched Dr. Li Wenliang die of the disease he risked everything to warn others of. 
+
+<!-- ## NYC Bike parking app -->
+
+<!-- Last summer, I decided to get a bicycle and start using cycling as a way to get around. One thing that stressed me out as a new biker was the availability of bike parking. There are lots of bike racks all over the city, but sometimes you go somewhere and find that there isn't one in sight of the place where you are going, and you need to bike or walk around the area a bit to find one. In big 2021, it seemed to me like there should be a map online that shows you where available bike racks are, so you can just bike directly to a place where you can park your bike, like with CitiBike. But the only one I found was on NYC OpenData, which isn't very accessible for practical use. So, I decided to make one - if you have ever had this problem, and want to be able to bike directly to the most accessible bike rack in NYC, feel free to use! -->

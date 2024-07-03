@@ -1,0 +1,19 @@
+---
+title: "Rachel Tao, MPH"
+subtitle: "Healthcare Data Scientist"
+output: 
+  html_document:
+    toc: false
+---
+
+<img src="images/slovenia.jpg" style="width:40%" ALIGN="right" HSPACE="80" VSPACE="20">
+
+Hello!
+
+My name is Rachel (she/her), and I am a Data Scientist at Imperial College London in the [iCARE](https://imperialbrc.nihr.ac.uk/facilities/icare/) team. Before moving to London, I was a Healthcare Data Analyst at Fair Health, leveraging data science for transparency in American healthcare pricing. I received my MPH in Epidemiology from Columbia University in 2019, where I got to work on some very cool research on [air pollution and heart attack incidence](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10097537/). 
+
+You can find out more about my professional background from my [resume](data/Rachel_Tao_Resume.pdf) or on [linkedin](https://www.linkedin.com/in/rachel-tao/).
+
+I also like: knitting, plants, free jazz, local government, noodles, bike rides, and Yamiche Alcindor.
+
+<img src="images/BJ_ground.jpg" style="width:91.5%" VSPACE="10">

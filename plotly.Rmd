@@ -1,0 +1,127 @@
+---
+title: "Plotly examples"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+
+We're going to look at NYC restaurant inspection data.
+
+```{r eval=FALSE, include=FALSE}
+library(tidyverse)
+# library(p8105.datasets)
+library(plotly)
+library(lubridate)
+
+knitr::opts_chunk$set(
+  fig.width = 6,
+  fig.asp = 0.6,
+  out.width = "90%"
+)
+
+theme_set(theme_minimal() + theme(legend.position = "bottom"))
+
+options(
+  ggplot2.continuous.colour = "viridis",
+  ggplot2.continuous.fill = "viridis"
+)
+
+scale_colour_discrete = scale_colour_viridis_d
+scale_fill_discrete = scale_fill_viridis_d
+
+```
+
+
+```{r eval=FALSE, include=FALSE}
+data("rest_inspec")
+
+nyc_inspections <- 
+  select(rest_inspec, action, boro, inspection_date, cuisine_description, dba, score, street, violation_description, zipcode, grade) %>% 
+  mutate(
+    inspection_date =
+      as.Date(inspection_date),
+  ) %>% 
+  filter(
+    inspection_date > "2016-12-31",
+    score != 'NA'
+  ) %>% 
+  arrange(inspection_date) %>% 
+  distinct(dba, .keep_all = TRUE)
+
+```
+
+
+## scatterplot
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+
+nyc_inspections %>% 
+  filter(
+    grade == "C",
+    score > 27L
+    ) %>% 
+  plot_ly(
+    x = ~inspection_date, y = ~score, color = ~boro, text = ~dba,
+    type = "scatter", mode = "markers", colors = "viridis"
+  ) %>% 
+  layout(
+    title = "Scores of Restaurants that Received a C-grade in 2017",
+    xaxis = list(title = "inspection date")
+  )
+
+```
+
+## boxplot
+
+```{r eval=FALSE, include=FALSE}
+nyc_inspections %>% 
+  mutate(cuisine_description = fct_reorder(cuisine_description, -score)) %>% 
+  plot_ly(
+    x = ~score, y = ~cuisine_description, color = ~cuisine_description, 
+    type = "box", colors = "viridis"
+  ) %>% 
+  layout(
+    showlegend = FALSE,
+    title = "Inspection Score by Cuisine Type",
+    yaxis = list(title = "")
+  )
+
+```
+
+## histogram
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+
+#create tibble with 5 boroughs and scores only
+
+boro_scores <- 
+  nyc_inspections %>% 
+  filter(score < 100) %>% 
+  select(boro, score, dba) %>% 
+  pivot_wider(
+    id_cols = dba,
+    names_from = boro,
+    values_from = score
+  ) %>% 
+  select(-Missing) %>% 
+  rename('STATEN_ISLAND' = "STATEN ISLAND")
+
+#note: 16 high outliers (score > 100) out of 16,771 observations were excluded for improved visualization.
+
+plot_ly(data = boro_scores, alpha = 0.4, colors = "viridis") %>% 
+  add_histogram(x = ~MANHATTAN, name = "manhattan") %>% 
+  add_histogram(x = ~BROOKLYN, name = "brooklyn") %>% 
+  add_histogram(x = ~QUEENS, name = "queens") %>% 
+  add_histogram(x = ~BRONX, name = "bronx") %>% 
+  add_histogram(x = ~STATEN_ISLAND, name = "staten island") %>% 
+  layout(
+    barmode = "overlay",
+    title = "score distribution by borough",
+    xaxis = list(title = "score"),
+    yaxis = list(title = "frequency")
+    )
+
+```
+

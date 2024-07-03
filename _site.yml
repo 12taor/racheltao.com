@@ -1,0 +1,23 @@
+name: "Yay internet!"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "Organizations"
+      href: orgs.html
+      external: true
+    - text: "Publications"
+      href: about.html
+      external: true
+    - text: "CV"
+      href: "data/Rachel_Tao_Resume.pdf"
+    - icon: fab fa-github
+      href: http://github.com/12taor/
+    - icon: fab fa-linkedin
+      href: https://www.linkedin.com/in/rachel-tao/
+    - icon: fa-envelope fa-lg
+      href: mailto:rachelhtao@gmail.com
+
+output:
+  html_document:
+    theme: cosmo

@@ -5,9 +5,6 @@ output:
     toc: false
 ---
 
-## Op-Ed
-**Tao R**. Opinion: A side effect of COVID-19 could be weaker civil liberties. [City Limits, July 4, 2020](https://citylimits.org/2020/07/04/opinion-a-side-effect-of-covid-19-could-be-weaker-civil-liberties/).
-
 ## Peer-Reviewed Articles
 **Tao R**, Chillrud LG, Nunez Y, Rowland S, Boehme AK, Yan J, Goldsmith J, Wright J, Kioumourtzoglou M-A. Applying principal component pursuit to investigate the association between source-specific fine particulate matter and myocardial infarction hospitalizations in New York City. [Environmental Epidemiology, 2023](data/Tao2023.pdf);7(2)e243.
 
@@ -34,6 +31,9 @@ Ibañez L, Oberfield SE, Witchel S, Auchus RJ, Chang RJ, Codner E, Dabadghao P, 
 **Tao R**, Palmer M. Ecosystem Services from New York Green Roofs: Differences in water-use
 between plant species. Poster presentation for the Science Research Symposium at Columbia
 University. [April 2016](data/TaoR_Poster_Final.pdf). New York, NY, USA.
+
+## Op-Ed
+**Tao R**. Opinion: A side effect of COVID-19 could be weaker civil liberties. [City Limits, July 4, 2020](https://citylimits.org/2020/07/04/opinion-a-side-effect-of-covid-19-could-be-weaker-civil-liberties/).
 
 ## Class Projects
 

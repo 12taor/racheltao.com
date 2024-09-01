@@ -1,6 +1,6 @@
 ---
 title: "Rachel Tao, MPH"
-subtitle: "Healthcare Data Scientist"
+subtitle: "Statistician"
 output: 
   html_document:
     toc: false
@@ -10,10 +10,10 @@ output:
 
 Hello!
 
-My name is Rachel (she/her), and I am a Data Scientist at Imperial College London in the [iCARE](https://imperialbrc.nihr.ac.uk/facilities/icare/) team. Before moving to London, I was a Healthcare Data Analyst at Fair Health, leveraging data science for transparency in American healthcare pricing. I received my MPH in Epidemiology from Columbia University in 2021, where I got to work on some very cool research on [air pollution and heart attack incidence](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10097537/). 
+My name is Rachel (she/her), and I am a Statistician at [Costello Medical](https://www.costellomedical.com/). Previously, I leveraged routinely collected data for health services research in the National Health System (NHS) as part of the [iCARE](https://imperialbrc.nihr.ac.uk/facilities/icare/) team and worked toward transparency in American healthcare pricing at [Fair Health](https://www.fairhealth.org/). I received my MPH in Epidemiology from Columbia University in 2021, where I got to work on some very cool research on [air pollution and heart attack incidence](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10097537/). 
 
 You can find out more about my professional background from my [resume](data/Rachel_Tao_Resume.pdf) or on [linkedin](https://www.linkedin.com/in/rachel-tao/).
 
-I also like: knitting, plants, free jazz, local government, noodles, bike rides, and Yamiche Alcindor.
+I also like: knitting, plants, free jazz, local government, noodles, bike rides, and sunny days in London.
 
 <img src="images/BJ_ground.jpg" style="width:91.5%" VSPACE="10">

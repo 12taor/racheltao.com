@@ -10,7 +10,7 @@ output:
 
 Hello!
 
-My name is Rachel (she/her), and I am a Statistician at [Costello Medical](https://www.costellomedical.com/). Previously, I leveraged routinely collected data for health services research in the National Health System (NHS) as part of the [iCARE](https://imperialbrc.nihr.ac.uk/facilities/icare/) team and worked toward transparency in American healthcare pricing at [Fair Health](https://www.fairhealth.org/). I received my MPH in Epidemiology from Columbia University in 2021, where I got to work on some very cool research on [air pollution and heart attack incidence](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10097537/). 
+My name is Rachel (she/her), and I am a Statistician at [Costello Medical](https://www.costellomedical.com/). Previously, I leveraged routinely collected data for health services research in the NHS as part of the [iCARE](https://imperialbrc.nihr.ac.uk/facilities/icare/) team at Imperial College London and worked toward transparency in American healthcare pricing at [Fair Health](https://www.fairhealth.org/). I received my MPH in Epidemiology from Columbia University in 2021, where I got to work on some very cool research on [air pollution and heart attack incidence](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10097537/). 
 
 You can find out more about my professional background from my [resume](data/Rachel_Tao_Resume.pdf) or on [linkedin](https://www.linkedin.com/in/rachel-tao/).
 

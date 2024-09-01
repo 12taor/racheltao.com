@@ -45,4 +45,4 @@ Data Science I, Mailman School of Public Health, Columbia University. Fall 2020:
 
 Senior Thesis, Department of Ecology, Evolution, and Environmental Biology, Columbia University. Fall 2015: [Ecosystem services from New York green roofs: differences in water-use between plant species](data/TaoR_Thesis_Final.pdf)
 
-<img src="images/amanda.jpg" style="position:absolute; top:80px; right:150px; width:100px">
+<img src="images/amanda.jpg" style="position:absolute; top:80px; right:50px; width:100px">

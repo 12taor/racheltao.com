@@ -6,6 +6,8 @@ output:
 ---
 
 ## Peer-Reviewed Articles
+Lear R, Averill P, Carenzo C, **Tao R**, Glampson B, Leon-Villapalos C, Latchford R, Mayer E. Co-producing a safe mobility and falls informatics platform to drive meaningful quality improvement in the hospital setting: a mixed-methods protocol for the insightFall study. [BMJ Open 2025](https://bmjopen.bmj.com/content/15/2/e082053.abstract);15:e082053
+
 **Tao R**, Chillrud LG, Nunez Y, Rowland S, Boehme AK, Yan J, Goldsmith J, Wright J, Kioumourtzoglou M-A. Applying principal component pursuit to investigate the association between source-specific fine particulate matter and myocardial infarction hospitalizations in New York City. [Environmental Epidemiology, 2023](data/Tao2023.pdf);7(2)e243.
 
 Pereira-Eshraghi CF, Tao R, Chiuzan CC, Zhang Y, Shen W, Lerner JP, Oberfield SE, Sopher AB. Ovarian follicle count by magnetic resonance imaging is greater in adolescents and young adults with polycystic ovary syndrome than in controls. [F&S Reports, 2022](data/Pereira2022.pdf);3(2):102-109.
@@ -22,6 +24,13 @@ Oberfield SE, **Tao R**, Witchel SF. Present knowledge on the etiology and treat
 
 Ibañez L, Oberfield SE, Witchel S, Auchus RJ, Chang RJ, Codner E, Dabadghao P, Darendeliler F, Elbarbary NS, Gambineri A, Garcia Rudaz C, Hoeger KM, López-Bermejo A, Ong K, Peña AS, Reinehr T, Santoro N, Tena-Sempere M, **Tao R**, Yildiz BO, Alkhayyat H, Deeb A, Joel D, Horikawa R, de Zegher F, Lee PA. An International Consortium Update: Pathophysiology, diagnosis, and treatment of polycystic ovarian syndrome in adolescence. [Horm Res Paediatr, 2017](data/Ibanez2017.pdf);88(6):371-395. 
 
+## Conference Posters
+Judge RK, **Tao RH**, Curteis TH. Accounting for the additional uncertainty following Rank-Preserving Structural Failure Time Model (RPSFTM) crossover adjustment in survival analysis: A SAGE approach. [Value in Health 2025](https://www.ispor.org/heor-resources/presentations-database/presentation-cti/ispor-europe-2025/poster-session-1-2/accounting-for-the-additional-uncertainty-following-rank-preserving-structural-failure-time-model-rpsftm-crossover-adjustment-in-survival-analysis-a-sage-approach);28(12):S494.
+
+Redig J, Heyne M, Dong W, Davidson MB, Dutta P, Pashley A, Michaels CJ, **Tao R**, Bajaj H. An adjusted indirect comparison of once-weekly insulin efsitora alfa vs. insulin icodec for adults with Type 2 Diabetes Mellitus previously treataed with basal insulin. [Value in Health 2025](https://www.ispor.org/heor-resources/presentations-database/presentation-cti/ispor-europe-2025/poster-session-1-2/an-adjusted-indirect-comparison-of-once-weekly-insulin-efsitora-alfa-vs-insulin-icodec-for-adults-with-type-2-diabetes-mellitus-previously-treated-with-basal-insulin);28(12):S42-S43.
+
+Heyne M, Redig R, Bajaj H, Dong W, Dutta P, Pashley A, Michaels CJ, **Tao R**, Davidson MB. An adjusted indirect comparison of once-weekly insulin efsitora alfa vs. insulin icodec for adults with Type 2 Diabetes Mellitus previously treataed with basal-bolus insulin. [Value in Health 2025](https://www.ispor.org/heor-resources/presentations-database/presentation-cti/ispor-europe-2025/poster-session-1-2/an-adjusted-indirect-comparison-of-once-weekly-insulin-efsitora-alfa-vs-insulin-icodec-for-adults-with-type-2-diabetes-mellitus-previously-treated-with-basal-bolus-insulin);28(12):S43.
+
 ## Presentations
 
 **Tao RH**. Pie Charts: Friend or Foe? Lightening Talk for R-Ladies NYC Meetup. [October 2021](https://www.youtube.com/watch?v=x1q70EPvLPE). Virtual.
@@ -35,13 +44,9 @@ University. [April 2016](data/TaoR_Poster_Final.pdf). New York, NY, USA.
 ## Op-Ed
 **Tao R**. Opinion: A side effect of COVID-19 could be weaker civil liberties. [City Limits, July 4, 2020](https://citylimits.org/2020/07/04/opinion-a-side-effect-of-covid-19-could-be-weaker-civil-liberties/).
 
-## Class Projects
+## Academic Theses
 
 Master Thesis, Department of Epidemiology, Mailman School of Public Health, Columbia University. Spring 2021: [Investigating the association between source-specific fine particulate matter and hospitalization due to myocardial infarction in New York City](data/Tao_Rachel_FinalThesis.pdf)
-
-Introduction to Machine Learning for Epidemiology, Mailman School of Public Health, Columbia University. Spring 2021: [Individual Final Project: Unsupervised and Supervised Analyses to Investigate Exposome Predictors of Childhood Overweight/Obesity](https://github.com/12taor/ML_for_epi_project/blob/main/final_project.md)
-
-Data Science I, Mailman School of Public Health, Columbia University. Fall 2020: [Group Final Project: Factors Influencing Abortion Access](https://maggie-mengyuan-li.github.io/p8105_2020_final/index.html#Screencast)
 
 Senior Thesis, Department of Ecology, Evolution, and Environmental Biology, Columbia University. Fall 2015: [Ecosystem services from New York green roofs: differences in water-use between plant species](data/TaoR_Thesis_Final.pdf)
 
